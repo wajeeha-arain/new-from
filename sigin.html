@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+<!-- 
+    <div class="full-page" style="background-image: url(./r.jpg);
+    background-position: center; background-repeat: no-repeat; background-size: cover;" > -->
+    <div class="full-page" style="background: linear-gradient(136deg,#f8a251b7, #e09a9af6 );">
+        <div class="navbar">
+            <div>
+                <a href="./index.html" style="font-weight: bolder;">Seek coding</a>
+            </div>
+            <nav>
+                <ul id="menuItem">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contect</a></li>
+                    <li><a href="#">service</a></li>
+                    <!-- <li><button><a href="#">Sign In</a></button></li> -->
+                    <li><button><a href="./login.html">LogIn </a></button></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+        <div class="form-container">
+            <div class="uil-times" style="background-color: #ffffff3a;">
+                <!-- login -->
+                <div class="login-form">
+                    <form onsubmit="signin(event)">
+                        <h2>Sign in</h2>
+                        <div class="input-box">
+                            <input type="email" name="" id="email" placeholder="enter your email" required>
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                        </div>
+
+                        <div class="input-box">
+                            <input type="password" name="" id="password" placeholder="enter your password" required>
+                            <!-- <i class="fa-solid fa-lock"></i> -->
+                        </div>
+
+
+                        <div class="option-field">
+                            <span class="ckeckBox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+
+                            </span>
+                            <a href="#" class="forgot">
+                                Forgot password?
+                            </a>
+                        </div>
+                </div>
+
+                <button class="button" type="submit" style="outline: none;border: none;">Sign in</button>
+                </form>
+
+
+
+
+                <div class="last">
+                    Already have an account?<a href="./login.html">log in.</a>
+                    <a href="./index.html">.back?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./app.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+ 
+    <script>
+    const firebaseConfig = {
+     apiKey: "AIzaSyCJvwUR0sylF_Ma6UhZpVtlWedgPERuYyI",
+     authDomain: "again-sin.firebaseapp.com",
+     projectId: "again-sin",
+     storageBucket: "again-sin.appspot.com",
+     messagingSenderId: "820182058626",
+     appId: "1:820182058626:web:7ff267bd56fb2969edd69b"
+   };
+ 
+   firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>
